@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nike - Kids</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { background:#f6f6f6; color:#111; margin:0; font-family: 'Inter', sans-serif; }
+    nav {
+      background:#000;
+      color:#fff;
+      padding:1rem 2rem;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    nav .menu a { margin-left:1.5rem; text-decoration:none; color:#fff; font-weight:500; }
+    nav .menu a:hover { color:#1e90ff; }
+
+    header { text-align:center; padding:4rem 2rem 2rem; font-size:2rem; font-weight:600; }
+
+    .products {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+      gap:1.5rem;
+      padding:2rem;
+      max-width:1200px;
+      margin:0 auto;
+    }
+
+    .card {
+      background:#fff;
+      border-radius:8px;
+      overflow:hidden;
+      text-align:center;
+      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+      transition:transform 0.15s ease-in-out;
+    }
+    .card:hover { transform:translateY(-5px); }
+    .card img { width:100%; height:auto; background:#eee; }
+    .card-content { padding:1rem; }
+    .card-content h3 { font-size:1.1rem; margin-bottom:0.5rem; }
+    .card-content .price { color:#1e90ff; font-weight:600; margin-bottom:0.5rem; } /* Blue accent */
+    .card-content .button {
+      display:inline-block;
+      margin-top:0.5rem;
+      padding:0.5rem 1rem;
+      border:1px solid #111;
+      border-radius:4px;
+      font-size:0.9rem;
+      cursor:pointer;
+    }
+    .card-content .button:hover { background:#111; color:#fff; }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo"><strong>NIKE</strong></div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="mens.html">Mens</a>
+      <a href="womens.html">Womens</a>
+      <a href="kids.html">Kids</a>
+      <a href="Sales.html">Sales</a>
+    </div>
+  </nav>
+
+  <!-- Page Heading -->
+  <header>Kids Collection</header>
+
+  <!-- Product Section -->
+  <section class="products">
+    <div class="card">
+      <img src="images/kid1.avif" alt="Nike Air Force 1 Kids">
+      <div class="card-content">
+        <h3>Nike Air Force 1 Kids</h3>
+        <div class="price">$85</div>
+        <button class="button">Shop Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/kid2.avif" alt="Nike Revolution Kids">
+      <div class="card-content">
+        <h3>Nike Revolution 6 Kids</h3>
+        <div class="price">$60</div>
+        <button class="button">Shop Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/kid3.avif" alt="Nike Blazer Low Kids">
+      <div class="card-content">
+        <h3>Nike Blazer Low Kids</h3>
+        <div class="price">$70</div>
+        <button class="button">Shop Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/kid4.avif" alt="Nike Air Max Kids">
+      <div class="card-content">
+        <h3>Nike Air Max Kids</h3>
+        <div class="price">$95</div>
+        <button class="button">Shop Now</button>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

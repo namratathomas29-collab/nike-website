@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nike - Womens</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { background:#fff; color:#111; margin:0; font-family: 'Inter', sans-serif; }
+    nav {
+      background:#000;
+      color:#fff;
+      padding:1rem 2rem;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    nav .menu a { margin-left:1.5rem; text-decoration:none; color:#fff; font-weight:500; }
+    nav .menu a:hover { color:#ff4081; } /* Pink hover for womens */
+
+    header { text-align:center; padding:3rem 2rem 1rem; font-size:2rem; font-weight:700; color:#ff4081; }
+
+    .products {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+      gap:1.5rem;
+      padding:2rem;
+      max-width:1200px;
+      margin:0 auto;
+    }
+
+    .card {
+      background:#fdfdfd;
+      border-radius:8px;
+      overflow:hidden;
+      text-align:center;
+      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+      transition:transform 0.15s ease-in-out;
+    }
+    .card:hover { transform:translateY(-5px); }
+    .card img { width:100%; height:auto; background:#eee; }
+    .card-content { padding:1rem; }
+    .card-content h3 { font-size:1.1rem; margin-bottom:0.5rem; }
+    .card-content p { font-size:0.9rem; color:#555; margin-bottom:0.8rem; }
+    .button {
+      display:inline-block;
+      padding:0.5rem 1rem;
+      border:1px solid #111;
+      border-radius:4px;
+      font-size:0.9rem;
+      cursor:pointer;
+    }
+    .button:hover { background:#111; color:#fff; }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo"><strong>NIKE</strong></div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="mens.html">Mens</a>
+      <a href="womens.html">Womens</a>
+      <a href="kids.html">Kids</a>
+      <a href="sales.html">Sales</a>
+    </div>
+  </nav>
+
+  <!-- Page Heading -->
+  <header>✨ Womens Collection</header>
+
+  <!-- Product Section -->
+  <section class="products">
+    <div class="card">
+      <img src="images/women1.avif" alt="Nike Air Force 1 Women">
+      <div class="card-content">
+        <h3>Nike Air Force 1 Shadow</h3>
+        <p>Light, stylish, all-day comfort.</p>
+        <button class="button">Shop Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/women2.avif" alt="Nike Blazer Mid Women">
+      <div class="card-content">
+        <h3>Nike Blazer Mid '77</h3>
+        <p>Classic basketball style reinvented.</p>
+        <button class="button">Shop Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/women3.avif" alt="Nike Air Max Women">
+      <div class="card-content">
+        <h3>Nike Air Max 270</h3>
+        <p>Max cushioning with modern flair.</p>
+        <button class="button">Shop Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/women4.avif" alt="Nike Pegasus Women">
+      <div class="card-content">
+        <h3>Nike Pegasus 40</h3>
+        <p>Engineered for running and beyond.</p>
+        <button class="button">Shop Now</button>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
